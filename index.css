@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  width: 100%;
+}
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+.main-content {
+  background: url("https://thumb.tildacdn.com/tild3238-6135-4537-b333-393734653961/-/format/webp/sebastian-pociecha-L.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0;
+}
+.body-main-content {
+  padding: 140px 0 0 15%;
+  height: 100vh;
+  width: 700px;
+}
+.main-info {
+  color: rgb(224 224 224);
+  padding-top: 50px;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+.main-number {
+  margin-top: 16px;
+  font-size: 24px;
+}
+.button-add-service {
+  background-color: rgb(255 220 18);
+  margin-top: 60px;
+  width: 230px;
+  height: 58px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button-add-service:hover {
+  background-color: white;
+  border: 3px solid rgb(255 220 18);
+}
+.navigate {
+  position: fixed;
+  z-index: 100;
+  width: calc(100% - 40px);
+  top: 20px;
+  right: 20px;
+}
+.navigate-body {
+  background-color: rgb(255 220 18);
+  list-style-type: none;
+  height: 57px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.nav-link:hover {
+  color: white;
+}
+.content-body {
+  background: url("https://img.freepik.com/free-photo/white-brick-wall_1194-7432.jpg?w=1060&t=st=1661768760~exp=1661769360~hmac=182f0987ed0b4349f6b4a9e3a67c38960a52407e1c20841ecf34ab3f2d66a554");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.our-services-body {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px 0 20px;
+}
+.card1 {
+  background: url("https://static.tildacdn.com/tild6264-6138-4639-b162-333864316164/---1024x576.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 480px;
+}
+.card2 {
+  background: url("https://static.tildacdn.com/tild3964-3032-4330-a336-336661653666/fit_930_519_false_cr.jpeg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 240px;
+}
+.card3 {
+  background-color: black;
+  background: url("https://thumb.tildacdn.com/tild3237-3635-4333-b032-303862363332/-/format/webp/unnamed.jpg");
+  background-color: black;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 240px;
+}
+.card4 {
+  background: url("https://thumb.tildacdn.com/tild6465-3930-4739-a465-393262623965/-/format/webp/thumb_840x300.jpeg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 480px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.card {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.card-text {
+  left: 30px;
+  bottom: 40px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  line-height: 30px;
+}
+.card-text > p {
+  font-weight: 300;
+}
+.our-services > p {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 26px;
+}
+.title {
+  padding-top: 110px;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 80px;
+}
+.stages-work-body {
+  margin: auto 180px;
+}
+.stages-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 90px;
+  padding-bottom: 150px;
+}
+.stage {
+  position: relative;
+}
+.stage > p {
+  position: relative;
+  z-index: 3;
+}
+.stage > h4 {
+  position: relative;
+  z-index: 3;
+}
+.background-number {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 160px;
+  font-weight: bold;
+  color: rgb(255 220 18);
+  opacity: 0.7;
+}
+.advantages {
+  background: url("https://static.tildacdn.com/lib/unsplash/1789ed6d-f801-4247-eb9b-bcad707348ae/photo.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.advantages-title {
+  color: white;
+}
+.conteiner {
+  background-color: black;
+  opacity: 0.7;
+}
+.advantages-body {
+  margin: auto 200px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 120px;
+}
+.advantage {
+  text-align: center;
+  width: 250px;
+}
+.price {
+  margin: auto 180px;
+  margin-bottom: 20px;
+}
+.title-price {
+  text-decoration: underline;
+  font-size: 40px;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+.price-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+.price-body p {
+  font-size: 16px;
+}
+.type {
+  display: flex;
+  justify-content: space-between;
+}
+.price-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.price-type {
+  width: 400px;
+}
+.type > p ~ p {
+  text-decoration: underline;
+}
+.reviws-body {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.reviews {
+  margin: auto 20%;
+  padding-bottom: 180px;
+}
+.review-text > p {
+  width: 600px;
+  font-size: 18px;
+}
+.review-text > span {
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.avatar {
+  border-radius: 50%;
+}
+.button-add-review {
+  background-color: rgb(255 220 18);
+  width: 230px;
+  height: 58px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button-add-review:hover {
+  background-color: white;
+  border: 3px solid rgb(255 220 18);
+}
+.wrapper-button {
+  display: flex;
+  justify-content: center;
+}
+.order {
+  background: url("https://thumb.tildacdn.com/tild3831-3135-4230-a463-393739383165/-/format/webp/noroot.png");
+  background-position: top top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.order-wrapper {
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(51, 50, 49, 0.405),
+    rgba(0, 0, 0, 0.804)
+  );
+  height: 650px;
+}
+.order-body {
+  text-align: center;
+  color: white;
+}
+.order-body input {
+  width: 600px;
+  height: 60px;
+  padding-left: 40px;
+  font-size: 20px;
+}
+.order-body p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.input-submit {
+  background-color: rgb(255 220 18);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.input-submit:hover {
+  background-color: white;
+  border: 3px solid rgb(255 220 18);
+}
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.footer p {
+  color: rgb(203, 202, 202);
+}
+.mail-number {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 30px 0;
+}
+.add-order {
+  display: none;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 30px;
+  border-radius: 30px;
+}
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  cursor: pointer;
+}
+.add-order-title {
+  padding-top: 0;
+}
+.form-add-order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-add-order input {
+  border: 1px solid black;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+}
