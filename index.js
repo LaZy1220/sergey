@@ -74,7 +74,7 @@ window.onload=function(){
                     lineBlocks.forEach(lineBlock=>{
                         observer.observe(lineBlock)
                     })
-                }, 500);
+                }, 1);
             }
         }
     }
@@ -107,7 +107,7 @@ window.onload=function(){
         })
     }
     const options ={
-        threshold:0.4
+        threshold:0.5
     }
     const observer = new IntersectionObserver(changeLineItem, options)
     lineBlocks.forEach(lineBlock=>{
