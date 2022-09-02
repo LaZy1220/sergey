@@ -79,6 +79,7 @@ h4 {
   color: black;
   text-transform: uppercase;
   font-size: 18px;
+  padding-bottom: 8px;
 }
 .nav-link:hover {
   color: white;
@@ -116,9 +117,7 @@ h4 {
   height: 240px;
 }
 .card3 {
-  background-color: black;
   background: url("https://thumb.tildacdn.com/tild3237-3635-4333-b032-303862363332/-/format/webp/unnamed.jpg");
-  background-color: black;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -306,6 +305,7 @@ h4 {
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
 }
 .order-wrapper {
   background-image: -webkit-linear-gradient(
@@ -313,7 +313,7 @@ h4 {
     rgba(51, 50, 49, 0.405),
     rgba(0, 0, 0, 0.804)
   );
-  height: 650px;
+  height: 100%;
 }
 .order-body {
   text-align: center;
@@ -353,7 +353,8 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 40px;
+  height: 300px;
+  font-size: 20px;
 }
 .footer a {
   text-decoration: none;
@@ -366,7 +367,7 @@ h4 {
 .mail-number {
   display: flex;
   flex-direction: column;
-  padding: 40px 0 30px 0;
+  padding: 0 0 30px 0;
 }
 .add-order {
   display: none;
@@ -399,4 +400,16 @@ h4 {
   height: 50px;
   padding-left: 20px;
   font-size: 20px;
+}
+[data-line-parent] {
+  position: relative;
+}
+.line {
+  background-color: white;
+  height: 4px;
+  width: 0;
+  position: absolute;
+  z-index: 200;
+  transition: all 0.5s cubic-bezier(0.68, 0.55, 0.265, 1.55) 0s;
+  pointer-events: none;
 }
