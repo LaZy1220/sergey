@@ -701,6 +701,13 @@ h4 {
   .order {
     height: 500px;
   }
+  .add-order {
+    justify-content: space-between;
+  }
+  .add-order-title {
+    margin: auto 20px;
+    font-size: 30px;
+  }
 }
 @media screen and (max-height: 335px) {
   .menu-body {

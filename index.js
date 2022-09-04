@@ -122,7 +122,12 @@ const addOrderWindowHide = ()=>{
     addOrderWindow.style.display='none'
 }
 const addOrderWindowShow = ()=>{
-    addOrderWindow.style.display='block'
+    if(window.screen.height<=400){
+        addOrderWindow.style.display='flex'     
+    }
+    else{
+        addOrderWindow.style.display='block'
+    }
 }
 
 addOrderButton.addEventListener('click',addOrderWindowShow)
