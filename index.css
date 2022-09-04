@@ -7,6 +7,7 @@
 }
 body {
   width: 100%;
+  transition: all ease 1s;
 }
 h1 {
   font-size: 60px;
@@ -353,7 +354,7 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 300px;
+  height: 450px;
   font-size: 20px;
 }
 .footer a {
@@ -412,4 +413,120 @@ h4 {
   z-index: 200;
   transition: all 0.5s cubic-bezier(0.68, 0.55, 0.265, 1.55) 0s;
   pointer-events: none;
+}
+._active {
+  color: white;
+}
+.c-hamburger {
+  z-index: 110;
+  display: block;
+  background: #d42c56;
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  font-size: 0;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+}
+.c-hamburger:focus {
+  outline: none;
+}
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 12px;
+  right: 12px;
+  height: 4px;
+  background-color: white;
+}
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  content: "";
+}
+.c-hamburger span::before {
+  top: -13px;
+}
+.c-hamburger span::after {
+  bottom: -13px;
+}
+.c-hamburger-line {
+  background: #d42c56;
+}
+.c-hamburger-line span {
+  transition: background 0s 0.3s;
+}
+.c-hamburger span::before,
+.c-hamburger span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s 0s;
+}
+.c-hamburger-line span::before {
+  transition-property: top, transform;
+}
+.c-hamburger-line span::after {
+  transition-property: bottom, transform;
+}
+.c-hamburger-line.is-active {
+  background: green;
+}
+.c-hamburger-line.is-active span {
+  background: none;
+}
+.c-hamburger-line.is-active span::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.c-hamburger-line.is-active span::after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.c-hamburger-line.is-active span::before,
+.c-hamburger-line.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+#menu {
+  width: 250px;
+  margin-left: -250px;
+  background: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease 1s;
+  z-index: 100;
+  color: white;
+}
+.body-active {
+  left: 250px;
+}
+.menu-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.menu-link:hover {
+  color: grey;
+}
+#menu.nav-active {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 1120px) {
+  .navigate {
+    display: none;
+  }
 }

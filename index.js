@@ -42,7 +42,7 @@ window.onload=function(){
         }
     }
     function resizeFunc(){
-        const lineItemActive = document.querySelector('[data-line-item._active]')
+        const lineItemActive = document.querySelector('[data-line-item]._active')
         if(lineItemActive){
             const line = lineItemActive.closest('[data-line-parent]').querySelector('.line')
             line.style.transition='none'
@@ -127,3 +127,27 @@ const addOrderWindowShow = ()=>{
 
 addOrderButton.addEventListener('click',addOrderWindowShow)
 closeWindow.addEventListener('click',addOrderWindowHide)
+document.querySelector('.c-hamburger').addEventListener('click',function(e){
+    e.preventDefault()
+    if(this.classList.contains('is-active')){
+        this.classList.remove('is-active')
+        document.querySelector('#menu').classList.remove('nav-active')
+        document.body.classList.remove('body-active')
+    }
+    else{
+        this.classList.add('is-active')
+        document.querySelector('#menu').classList.add('nav-active')
+        document.body.classList.add('body-active')
+    }
+})
+const anchors = document.querySelectorAll('a[href*="#"]')
+for(let anchor of anchors){
+    anchor.addEventListener("click",function(event){
+        event.preventDefault()
+        const blockId = anchor.getAttribute('href')
+        document.querySelector(''+blockId).scrollIntoView({
+            behavior: "smooth",
+            block:"start"
+        })
+    })
+}
