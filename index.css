@@ -694,3 +694,11 @@ h4 {
     padding: 20px 0 15px 0;
   }
 }
+@media screen and (max-height: 400px) {
+  .body-main-content {
+    height: 500px;
+  }
+  .order {
+    height: 500px;
+  }
+}
