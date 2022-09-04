@@ -702,3 +702,11 @@ h4 {
     height: 500px;
   }
 }
+@media screen and (max-height: 335px) {
+  .menu-body {
+    gap: 5px;
+  }
+  .menu-link {
+    font-size: 18px;
+  }
+}
