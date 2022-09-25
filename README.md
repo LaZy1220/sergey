@@ -1,2 +1,2 @@
 # Landing
-[DEMO] (https://electrical-nst.herokuapp.com/) 
+[DEMO](https://electrical-nst.herokuapp.com/) 
