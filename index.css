@@ -389,7 +389,7 @@ h4 {
   cursor: pointer;
 }
 .add-order-title {
-  padding-top: 0;
+  padding-top: 10px;
 }
 .form-add-order {
   display: flex;
@@ -680,7 +680,7 @@ h4 {
     padding-bottom: 50px;
   }
   .order-body input {
-    width: 80%;
+    width: 60%;
     height: 50px;
     padding-left: 20px;
     font-size: 18px;
@@ -738,5 +738,10 @@ h4 {
   }
   .menu-link {
     font-size: 18px;
+  }
+}
+@media all and(display-mode: fullscreen) {
+  .order {
+    height: calc(100vh - 35%);
   }
 }
